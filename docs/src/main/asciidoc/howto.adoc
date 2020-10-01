@@ -563,6 +563,18 @@ only supported SCM is Git.
 The repository would have to have the following setup
 (which you can checkout from https://github.com/spring-cloud-samples/spring-cloud-contract-samples/tree/{samples_branch}/contracts_git/[here]):
 
+== How Can I Use local Git user for stub runner by default?
+
+====
+[source,indent=0]
+----
+# to run the ssh-agent
+$ eval `ssh-agent`
+# to store the pass in the agent
+$ ssh-add ~/.ssh/id_rsa
+----
+====
+
 ====
 [source,indent=0]
 ----
